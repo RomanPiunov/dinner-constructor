@@ -1,5 +1,6 @@
 package ru.practicum.dinner;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -40,8 +41,18 @@ public class Main {
         String dishType = scanner.nextLine();
         System.out.println("Введите название блюда:");
         String dishName = scanner.nextLine();
-        dc.allDishes.put(dishType, dishName); //Вот тут надо подумать чзх
 
+        String key = dishType;
+
+        ArrayList<String> values = new ArrayList<>();
+        while (true) {
+            String value = dishName;
+            if (values.equals("Конец")) {
+                break;
+            }
+            values.add(value);
+        }           //Вот тут надо подумать чзх
+        dc.appData(key, values);
         // добавьте новое блюдо
     }
 
