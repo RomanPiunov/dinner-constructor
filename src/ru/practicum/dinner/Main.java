@@ -40,6 +40,7 @@ public class Main {
         String dishType = scanner.nextLine();
         System.out.println("Введите название блюда:");
         String dishName = scanner.nextLine();
+        dc.allDishes.put(dishType, dishName); //Вот тут надо подумать чзх
 
         // добавьте новое блюдо
     }
@@ -58,6 +59,7 @@ public class Main {
         while (!nextItem.isEmpty()) {
 
         }
+
 
         // сгенерируйте комбинации блюд и выведите на экран
 
