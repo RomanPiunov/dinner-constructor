@@ -51,7 +51,7 @@ public class Main {
                 break;
             }
             values.add(value);
-        }           //Вот тут надо подумать чзх
+        }
         dc.appData(key, values);
         // добавьте новое блюдо
     }
